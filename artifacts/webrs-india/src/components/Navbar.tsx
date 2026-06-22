@@ -28,10 +28,10 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <div className="text-2xl font-bold font-display text-white tracking-tight" data-testid="logo">
-          WebRS India
-        </div>
-
+       <div className="flex items-center gap-2 text-2xl font-bold font-display text-white tracking-tight" data-testid="logo">
+  <img src="/webrs_india_logo.svg" alt="Logo" className="h-9 w-9" />
+  WebRS India
+</div>
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-sm font-medium text-white/80 hover:text-white transition-colors" data-testid="nav-home">Home</button>
